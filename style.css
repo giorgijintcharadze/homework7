@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  grid-area: daniel;
+  background-color: #733fc8;
+}
+.item2 {
+  grid-area: jonathan;
+  background-color: #48556a;
+}
+.item3 {
+  grid-area: kira;
+  background-color: #ffffff;
+}
+.item4 {
+  grid-area: jeanette;
+  background-color: #ffffff;
+}
+.item5 {
+  grid-area: patrick;
+  background-color: #19202d;
+}
+
+.container {
+  width: 70%;
+  height: 69vh;
+  /* border: solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  gap: 24px 30px;
+}
